@@ -15,7 +15,7 @@
 			<password-encoder ref="passwordEncoder" />
 			<user-service>
 				<user name="admin" password="1234"
-					authorities="hasRole(ROLE_ADMIN)" />
+					authorities="ROLE_ADMIN" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
