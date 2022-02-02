@@ -7,14 +7,14 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class WebApplicationSecurityInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 	
-	public void main() {
-		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(
-				WebApplicationSecurityInitializer.class);
-		System.out.print("************************************************"+applicationContext.getBeanDefinitionNames().length);
-		for (String beanName : applicationContext.getBeanDefinitionNames()) {
-			System.out.println(beanName);
-		}
-	}
+//	public void main() {
+//		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+//				WebApplicationSecurityInitializer.class);
+//		System.out.print("************************************************"+applicationContext.getBeanDefinitionNames().length);
+//		for (String beanName : applicationContext.getBeanDefinitionNames()) {
+//			System.out.println(beanName);
+//		}
+//	}
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -32,7 +32,7 @@ public class WebApplicationSecurityInitializer extends AbstractAnnotationConfigD
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
 //		main();
-		return new String[] { "/", "/a" };
+		return new String[] { "/" };
 	}
 
 }
